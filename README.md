@@ -10,26 +10,48 @@
 
 ## Project Description
 
-**BankBot** is an AI-powered chatbot designed to intelligently answer **banking-related Frequently Asked Questions (FAQs)** using **Natural Language Processing (NLP)** and **Large Language Models (LLMs)**.
-The system enables users to interact in natural language and receive accurate, context-aware responses related to banking services such as accounts, loans, interest rates, cards, and general policies.
+BankBot AI is an AI-powered chatbot system designed to handle frequently asked banking questions efficiently.
+The system uses Natural Language Processing (NLP) and a Large Language Model (LLM) to understand user queries and provide accurate, human-like responses through a simple web interface.
 
-This project demonstrates practical implementation of **LLM-based conversational AI** and is suitable for **Infosys certification**, **academic evaluation**, and **real-world deployment** scenarios.
+The goal of this project is to automate repetitive banking queries, reduce human workload, and provide 24×7 customer support.
 
 ---
+## Problem Statement
+
+Banks receive a large number of repetitive customer queries related to:
+Account services
+ATM / card issues
+
+Loans and interest rates
+
+Banking procedures
+
+Handling these manually leads to:
+
+Long waiting times
+
+Increased operational cost
+
+Limited availability
+This project addresses these challenges by providing an intelligent chatbot solution.
 
 ## Features
 
-* 💬 Natural language conversation for banking FAQs
-* 🧠 Context-aware AI responses
-* 🔁 Configurable LLM backend (easy to switch models)
-* ⚡ Fast response generation
-* 🏦 Domain-specific prompt tuning for banking
-* 🖥️ Easy local execution
-* 📄 Clean and modular project structure
+AI-powered conversational chatbot
+Handles common banking FAQs
+User-friendly web interface using Streamlit
+Context-aware responses using LLM
+Secure and modular project structure
 
+Scalable for multiple users
 ---
 
 ## Techniques Used
+Programming Language: Python
+Frontend: Streamlit
+AI / NLP: LangChain, Transformer-based LLM (via Groq API)
+Database: SQLite
+Other Libraries: bcrypt, plotly, python-dotenv
 
 ### Natural Language Processing (NLP)
 
@@ -74,112 +96,36 @@ This project demonstrates practical implementation of **LLM-based conversational
 * Transformer architecture
 * Prompt Engineering
 
----
 
-## LLM Details
+## System Architecture (High Level)
+User → Streamlit UI → NLP Processing → LLM → Response → UI
 
-* Uses **transformer-based Large Language Models**
-* Supports models such as:
+Use Cases
 
-  * GPT-style models
-  * Instruction-tuned transformer LLMs
-* **LLM is fully configurable**:
+Banking customer support automation
 
-  * Model name
-  * Token length
-  * Temperature
-  * Inference parameters
+FAQ handling system
 
-This design allows easy replacement or upgrade of the LLM without changing core application logic.
+Educational demonstration of AI chatbots
 
----
+NLP and LLM-based application showcase
 
-## Project Structure
+## Security Considerations
 
-```
-BankBot-AI-Chatbot-for-Banking-FAQs/
-│
-├── app.py                  # Main application entry point
-├── chatbot/
-│   ├── prompt_engine.py    # Prompt engineering logic
-│   ├── llm_handler.py      # LLM integration
-│   ├── nlp_utils.py        # NLP preprocessing utilities
-│
-├── data/
-│   └── banking_faqs.json   # Banking FAQ knowledge base
-│
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── LICENSE                 # License information
-```
+Passwords are securely hashed
 
----
+Environment variables are protected
 
-## Installation Steps
+Sensitive files are excluded from version control
 
-1. **Clone the repository**
+ ## Future Enhancements
 
-   ```
-   git clone https://github.com/infosys-mentor/BankBot-AI-Chatbot-for-Banking-FAQs.git
-   ```
+Multi-language support
 
-2. **Navigate to the project directory**
+Voice-based interaction
 
-   ```
-   cd BankBot-AI-Chatbot-for-Banking-FAQs
-   ```
+Integration with real banking APIs
 
-3. **Create a virtual environment (optional but recommended)**
+User feedback and learning system
 
-   ```
-   python -m venv venv
-   source venv/bin/activate   # For Linux/Mac
-   venv\Scripts\activate      # For Windows
-   ```
-
-4. **Install dependencies**
-
-   ```
-   pip install -r requirements.txt
-   ```
-
----
-
-## How to Run the Project Locally
-
-1. Ensure all dependencies are installed
-2. Run the application:
-
-   ```
-   python app.py
-   ```
-3. Interact with the chatbot via terminal or web interface (based on implementation)
-
----
-
-## Certification Use Case
-
-This project is **ideal for Infosys Certification and Evaluation** because it:
-
-* Demonstrates real-world AI application development
-* Uses industry-standard NLP and LLM techniques
-* Follows clean coding and modular design principles
-* Supports explainability and scalability
-* Aligns with modern GenAI and Agentic AI concepts
-
-It can be showcased as:
-
-* AI/NLP Capstone Project
-* Enterprise-ready Conversational AI System
-* GenAI Proof of Concept (PoC)
-
----
-
-## License
-
-This project is licensed under the **MIT License**.
-You are free to use, modify, and distribute this project for educational and professional purposes.
-
----
-
-### ⭐ If you find this project useful, please consider giving it a star on GitHub!
+Admin analytics dashboard
