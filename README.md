@@ -113,9 +113,7 @@ NLP and LLM-based application showcase
 ## Security Considerations
 
 Passwords are securely hashed
-
 Environment variables are protected
-
 Sensitive files are excluded from version control
 
  ## Future Enhancements
