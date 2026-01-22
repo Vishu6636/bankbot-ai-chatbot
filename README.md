@@ -129,3 +129,6 @@ Integration with real banking APIs
 User feedback and learning system
 
 Admin analytics dashboard
+
+## License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project for educational and professional purposes.
